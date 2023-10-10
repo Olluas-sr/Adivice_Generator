@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --bg-color: hsl(218, 23%, 16%);
+    --container-color: hsl(217, 19%, 24%);
+    --advice-font-color: hsl(193, 38%, 86%);
+    --higlith-color: hsl(150, 100%, 66%);
+    --fonte-principal: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--container-color);
+    margin: auto;
+    border-radius: 25px;
+    width: 580px;
+}
+
+.container .container_titulo{
+    font-size: 12px;
+    color: var(--higlith-color);
+    padding-top: 15px;
+}
+
+.container .container_advice{
+    color: var(--advice-font-color);
+    font-size: 28px;
+    padding: 0 60px;
+}
+
+.container .container_linha{
+    padding: 10px 35px;
+}
+
+.container .container_dado{
+    background-color: var(--higlith-color);
+    width: 30px;
+    border-radius: 50px;
+    padding: 18px 15px 12px 15px;
+    position: relative;
+    margin: auto;
+    top: 30px;
+}
+
+.container_dado:hover{
+    box-shadow: 0px 0px 30px 9px var(--higlith-color);
+    -webkit-box-shadow: 0px 0px 30px 9px var(--higlith-color);
+    -moz-box-shadow: 0px 0px 30px 9px var(--higlith-color);
+}
+
+#dado{
+    display: none;
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 350px
+    }
+
+    .container .container_advice{
+        padding: 0 20px;
+    }
+}
